@@ -6,7 +6,7 @@
         {% if post.published_date %}
     		{{ post.published_date }}
 		{% else %}
-    		<a class="btn btn-default" href="{% url 'blog.views.post_publish' pk=post.pk %}">Publish</a>
+    		<a class="btn btn-default" href="{% url 'blog.views.post_publish' pk=post.pk %}">Publicar</a>
 		{% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
@@ -31,8 +31,8 @@
 		    </div>
 		    
 		{% empty %}
-		    <p>No comments here yet :(</p>
+		    <p>No hay comentarios :(</p>
 		{% endfor %}
 
-		<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+		<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Agregar comentario</a>
 {% endblock %}

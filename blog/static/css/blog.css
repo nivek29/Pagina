@@ -6,7 +6,8 @@
 
 	body {
     
-    	padding-left: 15px;
+    	padding-left: 150px;
+        padding-right: 150px;
     	background-image: url(../img/bg.jpg);	
 
 
@@ -25,7 +26,10 @@
     }
 
     .content {
-        margin-left: 40px;
+        width: 100%;{}
+        margin: 0px 0px 0px 0px;
+        background-color: #ffffff;
+        background: #CEDEDE;
     }
 
     h1, h2, h3, h4 {
@@ -50,10 +54,14 @@
         float: right;
         font-size: 26pt;
         margin-right: 20px;
+        -webkit-transition: all 2s ease;
     }
 
     .post {
-        margin-bottom: 70px;
+        
+        margin: 17px -280px 40px 70px;
+        
+        border-width: 2px;
     }
 
     .post h1 a, .post h1 a:visited {
